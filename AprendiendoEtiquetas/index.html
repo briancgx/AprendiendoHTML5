@@ -1,0 +1,189 @@
+<!-- <etiqueta atributo="valor"></etiqueta> -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8"> <!-- Codificacion de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Escalado de la pagina -->
+    <meta name="keywords" content="diseño,html,etiquetas,briancgx"> <!-- Palabras clave -->
+    <meta name="description" content="Aprendiendo a usar etiquetas en html"> <!-- Descripcion -->
+    <meta name="author" content="briancgx"> <!-- Autor -->
+    <meta name="copyright" content="github inc"> <!-- Derechos de autor -->
+    <meta name="robots" content="index"> <!-- Indexacion -->
+    <meta name="robots" content="follow"> <!-- Seguir enlaces -->
+
+    <!-- Titulo -->
+    <title>Aprendiendo Etiquetas</title>
+
+    <!-- Icono -->
+    <link rel="icon" href="cosas/Imagen.ico"> <!-- Icono de la pestaña (Solo es convertir la imagen a .ico)-->
+
+</head>
+<body>
+
+    <!-- Titulos -->
+    <h1>Este es un titulo (Son del h1-h6)</h1> <!-- h1 UNA SOLA VEZ -->
+    
+    <!-- Parrafos -->
+    <p>
+        Este es un parrafo (p). <br> <!-- Completa la linea y hace un salto -->
+        lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+
+    <!-- Tipos de letra -->
+    <b>Negrita</b>
+    <i>Cursiva</i>
+    <strike>Tachada</strike>
+    <small>Chiquita</small>
+
+    <!-- Enlaces -->
+    <a href="https://briancgx.github.io/">Enlace en la misma pestaña</a>
+    <a href="https://briancgx.github.io/" target="_blank">Enlace en una pestaña distinta</a>
+    <a href="cosas/pagina2.html">Enlace local</a>
+
+    <!-- Listas -->
+    <h2>Lista desordenada de compras para el super</h2>
+    <ul> <!-- Lista desordenada -->
+        <li>leche</li>
+        <li>Harina</li>
+        <li>Sal</li>
+        <li>Carne</li>
+        <li>Tiranosaurio Rex</li>
+    </ul>
+
+    <h2>Lista ordenada de compras para el super</h2>
+    <ol> <!-- Lista ordenada -->
+        <li>leche</li>
+        <li>Harina</li>
+        <li>Sal</li>
+        <li>Carne</li>
+        <li>Tiranosaurio Rex</li>
+    </ol> 
+
+    <!-- Multimedia -->
+    <h2>Imagenes en html</h2>
+    <p>
+        Aqui estará la <b>imagen:</b>
+    </p>
+    <img src="cosas/Imagen.png" width="300px" alt=""> <!-- Ruta de la imagen local (Recomendado sin tamaño) -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Tor-logo-2011-flat.svg/1200px-Tor-logo-2011-flat.svg.png" height="180px"  alt=""> <!-- Ruta de la imagen de internet (Recomendado sin tamaño) -->
+
+    <h2>Video en html</h2>
+    <p>
+        Aqui estará el <b>video:</b>
+    </p>
+    <video src="cosas/video.mp4" controls> </video>     <!-- Para externos funciona igual que la imagen -->
+    
+    <h2>Audio en html</h2>
+    <p>
+        Aqui estará el <b>audio:</b>
+    </p>
+    <audio src="cosas/video.mp4" controls> </audio>     <!-- Para externos funciona igual que la imagen -->
+
+    <!-- Uso de divs -->
+    <div>
+        <h3>Divs</h3>
+        <p>
+            Los <b>divs</b> son contenedores que se usan para agrupar elementos.
+        </p>
+    </div>
+
+    <!-- Formularios -->
+    <h3>Formularios</h3>
+    <form method="post"> <!-- Metodo de envio (post o get) -->
+        <input type="text" value="Soy muy bueno yo"> <!-- Texto (Value le da un valor por defecto) -->
+        <input type="password" required=""> <!-- Contraseña (Required hace que el campo sea obligatorio)  -->
+        <input type="number">  <!-- Numero -->
+        <input type="email"> <!-- Correo -->
+        <input type="color"> <!-- Color -->
+        <input type="range" min="1" max="5"> <!-- Rango entre lo que sea -->
+        <input type="date"> <!-- Fecha -->
+        <input type="time"> <!-- Hora -->
+        <input type="submit"> <!-- Enviar -->
+        <input type="button" value="Boton"> <!-- Boton -->
+        <textarea readonly=""> No se puede modificar por el readonly</textarea> <!-- Area de texto (Solo lectura) -->
+    </form>
+
+    <!-- Tablas -->
+    <table> 
+        <tr> <!-- Fila -->
+            <td><b>Nombre</b></td>
+            <td><b>Apellido</b></td>
+            <td><b>TikTok</b></td>
+            <td><b>Seguidores</b></td>
+        </tr>
+        <tr> <!-- Fila -->
+            <td>Brian</td>
+            <td>CGX</td>
+            <td>@briancgx</td>
+            <td>1700</td>
+
+        </tr>
+        <tr> <!-- Fila -->
+            <td>Pepe</td>
+            <td>Morales</td>
+            <td>@pepemorales</td>
+            <td>100</td>
+        </tr>
+        <tr> <!-- Fila -->
+            <td>Jose Luis</td>
+            <td>Perera</td>
+            <td>@jlperera</td>
+            <td>1200</td>
+        </tr>
+    </table>
+
+    <center> <!-- Centrar -->
+        <h3>Probando center y alt</h3>
+        <img src="cosas/Imagen.png" alt="Tor" title="Navegador Seguro" height="300px"> <!-- alt (Titulo por si la imagen no aparece)-->
+    </center>
+
+    <!-- Uso del ID -->
+    <h4>Noticia 1</h4>
+    <a href="#noticia2">Ir a la siguiente noticia</a><br> <!-- Enlace al id -->
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit molestiae voluptatibus aperiam quis earum tempora laboriosam excepturi odio ea architecto dolorem delectus est rem, sit ab, praesentium facere consequatur ratione.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptatum modi inventore sapiente quam nam id. Error animi non voluptatibus minus aspernatur optio nobis tenetur, consequuntur corporis officia sunt placeat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+    </p>
+    <h4 id="noticia2">Noticia 2</h4>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit molestiae voluptatibus aperiam quis earum tempora laboriosam excepturi odio ea architecto dolorem delectus est rem, sit ab, praesentium facere consequatur ratione.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti, voluptatum modi inventore sapiente quam nam id. Error animi non voluptatibus minus aspernatur optio nobis tenetur, consequuntur corporis officia sunt placeat.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla asperiores quod ipsa voluptas. Optio maxime ducimus, laboriosam commodi aliquam placeat, aspernatur nemo rerum quam aliquid distinctio, veniam quibusdam porro dolore.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quibusdam, ducimus hic autem exercitationem tenetur delectus eveniet minima modi a iure asperiores quaerat nam, perspiciatis provident nemo accusantium tempora ad.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio, quia molestias officia deserunt sequi beatae voluptatem itaque, consequuntur tempore minus veritatis sed reprehenderit deleniti saepe nobis nihil! Hic, voluptates neque.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae neque labore quos eius quo at fugiat exercitationem unde ducimus. Hic, velit facilis rem nemo adipisci doloribus eligendi non iure delectus.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit molestiae voluptatibus aperiam quis earum tempora laboriosam excepturi odio ea architecto dolorem delectus est rem, sit ab, praesentium facere consequatur ratione.
+    </p>
+
+</body>
+</html>
